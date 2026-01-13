@@ -1,10 +1,3 @@
-//
-//  Item.swift
-//  time2go
-//
-//  Created by appetizimo on 2025-12-01.
-//
-
 import Foundation
 import SwiftData
 

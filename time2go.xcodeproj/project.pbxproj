@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		35DF8C462EFCFB4C001F63B7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FFC66E2EDFF07A006DF4AC /* WidgetKit.framework */; };
+		35DF8C472EFCFB4C001F63B7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FFC6702EDFF07A006DF4AC /* SwiftUI.framework */; };
+		35DF8C582EFCFB4D001F63B7 /* Time2Go_WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 35DF8C452EFCFB4C001F63B7 /* Time2Go_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		35DF8C562EFCFB4D001F63B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E725C52EDCC10500B2636C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DF8C442EFCFB4C001F63B7;
+			remoteInfo = Time2Go_WidgetExtension;
+		};
 		35E725DD2EDCC10600B2636C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35E725C52EDCC10500B2636C /* Project object */;
@@ -23,15 +36,72 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		35FFC6872EDFF07A006DF4AC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				35DF8C582EFCFB4D001F63B7 /* Time2Go_WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		35DF8C452EFCFB4C001F63B7 /* Time2Go_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Time2Go_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DF8C5F2EFCFBCE001F63B7 /* Time2Go_WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time2Go_WidgetExtension.entitlements; sourceTree = "<group>"; };
 		35E725CD2EDCC10500B2636C /* time2go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = time2go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E725DC2EDCC10600B2636C /* time2goTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = time2goTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E725E62EDCC10600B2636C /* time2goUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = time2goUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FFC66E2EDFF07A006DF4AC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		35FFC6702EDFF07A006DF4AC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		35DF8C592EFCFB4D001F63B7 /* Exceptions for "Time2Go_Widget" folder in "Time2Go_WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 35DF8C442EFCFB4C001F63B7 /* Time2Go_WidgetExtension */;
+		};
+		35DF8C612EFCFCE0001F63B7 /* Exceptions for "time2go" folder in "time2go" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 35E725CC2EDCC10500B2636C /* time2go */;
+		};
+		35DF8C632EFCFCF5001F63B7 /* Exceptions for "time2go" folder in "Time2Go_WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppConfig.swift,
+				Localizable.xcstrings,
+				SharedCountdownStore.swift,
+				Time2GoActivityAttributes.swift,
+			);
+			target = 35DF8C442EFCFB4C001F63B7 /* Time2Go_WidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		35DF8C482EFCFB4C001F63B7 /* Time2Go_Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35DF8C592EFCFB4D001F63B7 /* Exceptions for "Time2Go_Widget" folder in "Time2Go_WidgetExtension" target */,
+			);
+			path = Time2Go_Widget;
+			sourceTree = "<group>";
+		};
 		35E725CF2EDCC10500B2636C /* time2go */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35DF8C612EFCFCE0001F63B7 /* Exceptions for "time2go" folder in "time2go" target */,
+				35DF8C632EFCFCF5001F63B7 /* Exceptions for "time2go" folder in "Time2Go_WidgetExtension" target */,
+			);
 			path = time2go;
 			sourceTree = "<group>";
 		};
@@ -48,6 +118,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35DF8C422EFCFB4C001F63B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DF8C472EFCFB4C001F63B7 /* SwiftUI.framework in Frameworks */,
+				35DF8C462EFCFB4C001F63B7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35E725CA2EDCC10500B2636C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,7 +157,10 @@
 				35E725CF2EDCC10500B2636C /* time2go */,
 				35E725DF2EDCC10600B2636C /* time2goTests */,
 				35E725E92EDCC10600B2636C /* time2goUITests */,
+				35DF8C482EFCFB4C001F63B7 /* Time2Go_Widget */,
+				35FFC66D2EDFF07A006DF4AC /* Frameworks */,
 				35E725CE2EDCC10500B2636C /* Products */,
+				35DF8C5F2EFCFBCE001F63B7 /* Time2Go_WidgetExtension.entitlements */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,13 +170,45 @@
 				35E725CD2EDCC10500B2636C /* time2go.app */,
 				35E725DC2EDCC10600B2636C /* time2goTests.xctest */,
 				35E725E62EDCC10600B2636C /* time2goUITests.xctest */,
+				35DF8C452EFCFB4C001F63B7 /* Time2Go_WidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		35FFC66D2EDFF07A006DF4AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35FFC66E2EDFF07A006DF4AC /* WidgetKit.framework */,
+				35FFC6702EDFF07A006DF4AC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		35DF8C442EFCFB4C001F63B7 /* Time2Go_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DF8C5A2EFCFB4D001F63B7 /* Build configuration list for PBXNativeTarget "Time2Go_WidgetExtension" */;
+			buildPhases = (
+				35DF8C412EFCFB4C001F63B7 /* Sources */,
+				35DF8C422EFCFB4C001F63B7 /* Frameworks */,
+				35DF8C432EFCFB4C001F63B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				35DF8C482EFCFB4C001F63B7 /* Time2Go_Widget */,
+			);
+			name = Time2Go_WidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = Time2Go_WidgetExtension;
+			productReference = 35DF8C452EFCFB4C001F63B7 /* Time2Go_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		35E725CC2EDCC10500B2636C /* time2go */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E725F02EDCC10600B2636C /* Build configuration list for PBXNativeTarget "time2go" */;
@@ -102,10 +216,12 @@
 				35E725C92EDCC10500B2636C /* Sources */,
 				35E725CA2EDCC10500B2636C /* Frameworks */,
 				35E725CB2EDCC10500B2636C /* Resources */,
+				35FFC6872EDFF07A006DF4AC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35DF8C572EFCFB4D001F63B7 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				35E725CF2EDCC10500B2636C /* time2go */,
@@ -170,9 +286,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2610;
-				LastUpgradeCheck = 2610;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					35DF8C442EFCFB4C001F63B7 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					35E725CC2EDCC10500B2636C = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -192,6 +311,10 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ko,
+				"zh-Hant",
+				ja,
 			);
 			mainGroup = 35E725C42EDCC10500B2636C;
 			minimizedProjectReferenceProxies = 1;
@@ -203,11 +326,19 @@
 				35E725CC2EDCC10500B2636C /* time2go */,
 				35E725DB2EDCC10600B2636C /* time2goTests */,
 				35E725E52EDCC10600B2636C /* time2goUITests */,
+				35DF8C442EFCFB4C001F63B7 /* Time2Go_WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		35DF8C432EFCFB4C001F63B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35E725CB2EDCC10500B2636C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +363,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		35DF8C412EFCFB4C001F63B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35E725C92EDCC10500B2636C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +394,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		35DF8C572EFCFB4D001F63B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35DF8C442EFCFB4C001F63B7 /* Time2Go_WidgetExtension */;
+			targetProxy = 35DF8C562EFCFB4D001F63B7 /* PBXContainerItemProxy */;
+		};
 		35E725DE2EDCC10600B2636C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 35E725CC2EDCC10500B2636C /* time2go */;
@@ -269,6 +412,70 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		35DF8C5B2EFCFB4D001F63B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Time2Go_WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72RPH5D458;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Time2Go_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Time2Go_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "appetizer.time2go.Time2Go-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35DF8C5C2EFCFB4D001F63B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Time2Go_WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72RPH5D458;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Time2Go_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Time2Go_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "appetizer.time2go.Time2Go-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		35E725EE2EDCC10600B2636C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,7 +535,9 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -385,7 +594,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -395,16 +606,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = time2go/time2go.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72RPH5D458;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = time2go/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Time2Go;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,16 +643,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = time2go/time2go.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72RPH5D458;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = time2go/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Time2Go;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +762,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35DF8C5A2EFCFB4D001F63B7 /* Build configuration list for PBXNativeTarget "Time2Go_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DF8C5B2EFCFB4D001F63B7 /* Debug */,
+				35DF8C5C2EFCFB4D001F63B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		35E725C82EDCC10500B2636C /* Build configuration list for PBXProject "time2go" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
